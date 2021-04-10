@@ -9,3 +9,6 @@ $(BUILD)
 
 $(RUN)
     sample.exe
+
+$(CLEAN)
+    del sample.exe
