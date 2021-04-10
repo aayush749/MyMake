@@ -56,6 +56,7 @@ int main(int argc, char const *argv[])
         //Run the first flag -- it will be considered the default one, to change the action the user will have to change the file(makefile)
         std::string command;
         GetDefaultCommand(makefile, command);
+        printf("%s\n", command.c_str());
         status = system(command.c_str());
     }
     else

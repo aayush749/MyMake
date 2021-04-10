@@ -4,3 +4,5 @@
 .vscode/settings.json
 
 structure_of_makefile.txt
+
+*.exe
