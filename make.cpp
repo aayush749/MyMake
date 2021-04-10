@@ -74,7 +74,10 @@ int main(int argc, char const *argv[])
         {
             command = commandMap[argv[i]]; 
             if(command.length())
+            {
+                printf("%d:>> %s\n", i, command.data());
                 status = system(command.data());
+            }    
             else
                 fprintf(stderr, "[Error: $(%s)] flag not found in makefile\n", argv[i]);
             i++;
