@@ -12,3 +12,6 @@ $(RUN)
 
 $(CLEAN)
     del sample.exe
+
+$(DEBUG)
+    gdb sample.exe
