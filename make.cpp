@@ -160,13 +160,6 @@ void LoadFlagMap(std::ifstream& file, std::unordered_map<std::string, std::strin
         }
     }
 
-    // //Map the last command after file reading closed
-    // while(ss)
-    // {
-    //     ss >> temp;
-    //     command += temp + ' ';
-    // }
-    
     //remove the last reduntant space
     command.erase(command.end() - 1);
     commandMap[currentFlag] = command;
